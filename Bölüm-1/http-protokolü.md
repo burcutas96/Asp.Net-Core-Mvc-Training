@@ -17,7 +17,6 @@ Http, client ile server arasındaki ilişkiyi 9 farklı fonksiyonla gerçekleşt
 <p>
 Genellikle yaptığımız işleme göre en çok tercih edilen fonksiyonlar; get, post, put ve delete fonksiyonlarıdır.
 </p>
-<br><br>
 
 * Get fonksiyonu: Sunucudan veri(leri) listelemek, elde etmek için kullanılır. Verilere başka bir etkisi yoktur. Ve veritabanındaki sorgu karşılığı ise Select'tir.
 <br>
