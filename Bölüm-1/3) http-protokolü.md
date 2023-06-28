@@ -30,5 +30,5 @@ Genellikle yaptığımız işleme göre en çok tercih edilen fonksiyonlar; get,
 * Patch fonksiyonu: Bir verinin bütününü değil de kısmi bir alanını güncelliyorsak eğer bu patch isteğidir. Ve veritabanındaki sorgu karşılığı ise Update'tir.
 <br>
 
-* Patch fonksiyonu: Var olan bir veriyi silmek için kullanılır. Ve veritabanındaki sorgu karşılığı ise Delete'tir.
+* Delete fonksiyonu: Var olan bir veriyi silmek için kullanılır. Ve veritabanındaki sorgu karşılığı ise Delete'tir.
 <br>
