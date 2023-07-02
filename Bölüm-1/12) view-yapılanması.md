@@ -43,7 +43,7 @@ Model bazlı veri göndermeyle beraber biz ekstradan kullanıcıdan veri alabili
 </p>
 <br>
 
-* <h4>Model Bazlı Veri Gönderimi </h4>
+* ### Model Bazlı Veri Gönderimi
 <p>
 Eğer bir veriyi view'e model bazlı göndereceksek View fonksiyonunun model overload'ını kullanmamız gerekmektedir.
 </p>
@@ -67,11 +67,11 @@ Ve view'de bu gelen veriyi şu şekilde kontrol ediyoruz:
 <br>
 
 
-* <h4>Veri Taşıma Kontrolleri</h4>
+* ### Veri Taşıma Kontrolleri
 
-<h5 style="margin-top:30px">
+<h4 style="margin-top:30px">
 1- ViewBag 
-</h5>
+</h4>
 <p>
 View'e gönderilecek / taşınacak data'yı dynamic şekilde tanımlanan bir değişkenle göndermemizi sağlayan bir veri taşıma kontrolüdür. 
 </p>
@@ -105,12 +105,12 @@ Türü bildirdiğimizde verinin elemanlarına ulaşabiliriz;
 <img src="img/viewbag-view2.png">
 <p>
 Yani burda tür bildirme işlemi opsiyonel bir şeydir. Eğer elemanlara ulaşmak istiyorsak as veya cast operatörlerinden birini kullanmamız gerekirken elemanlara ulaşmak istemiyorsak bu operatörleri kullanarak tür bildirimi yapmamıza gerek yoktur.
-</p>
+</p><br>
 
 
-<h5 style="margin-top:30px">
+<h4 style="margin-top:30px">
 2- ViewData
-</h5>
+</h4>
 <p>
 ViewBag'de olduğu gibi action'daki datayı view'e taşımamızı sağlayan bir kontroldür. 
 </p>
@@ -131,11 +131,12 @@ ViewData'da ViewBag gibi çalışmaktadır. View() fonksiyonuyla veriyi, object 
 Ancak view katmanına gönderilen boxing edilmiş veriyi kullanabilmek için as veya cast operatörleriyle unboxing etmek zorundayız. 
 </p>
 <img src="img/viewdata-view.png">
+<br><br>
 
 
-<h5 style="margin-top:30px">
+<h4 style="margin-top:30px">
 3- TempData
-</h5>
+</h4>
 <p>
 TempData'da, ViewData'da olduğu gibi action'daki veriyi boxing'e tabi tutarak view'e göndermemizi sağlar.
 </p>
