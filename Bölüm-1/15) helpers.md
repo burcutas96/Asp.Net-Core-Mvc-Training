@@ -65,6 +65,10 @@ O anki url'e dair tüm bilgilere erişmemizi sağlayan bir property'dir.
 
 ## 2- HtmlHelper 
 <p>
+View üzerinde html ile ilgili bize yardımcı olan foksiyonları tanıyan bir sınıftı.
+</p>
+
+<p>
 Html etiketlerini server tabanlı oluşturmamızı sağlayan yardımcı metotları barındırmaktadır.
 </p>
 
