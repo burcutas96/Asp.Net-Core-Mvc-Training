@@ -53,7 +53,6 @@ Alttaki resimde @addTagHelper diye eklediğimiz kütüphane sistem tarafından d
 Bizim oluşturduğumuz tag helper'ı kullanabilmemiz için yine @addTagHelper komutuyla bizim namespace'imizin ismini eklememiz gerekecektir. 
 </p>
 <img src="img/customtaghelper4.png">
-<br><br>
 <p>
 Görüldüğü üzere email tag'ı aktif hale geldi.
 </p>
@@ -72,7 +71,7 @@ Ve dikkat ederseniz bu x attribute'u sadece bir attribute'dan ibaret. Yani bir t
 <br><br>
 
 <p>
-Bu attribute'u helper üzerinde aktifleştirebilmek / işlevsel hale getirebilmek için EmailTagHelper class'ında override etmemiz gereken bir metot vardır. O metot da Process() isminde bir metottur.
+Bu attribute'u helper üzerinde aktifleştirebilmek / işlevsel hale getirebilmek için EmailTagHelper class'ında override etmemiz gereken bir metot olacaktır. O metot da Process() isminde bir metodudur.
 </p>
 <img src="img/customtaghelper6.png">
 <br><br>
@@ -83,7 +82,6 @@ Uygulamayı çalıştırdığımızda ilgili tag helper tetiklendiğinde bu Proc
 Process metodunun iki tane parametresi bulunmaktadır; context ve output parametreleri. Context parametresi, ilgili tag helper'a vermiş olduğumuz bütün değerleri bizlere getirirken Output parametresi bu tag helper'ın yapacağı işlemleri bize sunacaktır.
 </p>
 <img src="img/customtaghelper7.png">
-<br><br>
 <p>
 Görüldüğü üzere context'in 'attribute' parametresi üzerinden x attribute'umuza ulaşabiliyoruz.
 </p>
@@ -91,15 +89,14 @@ Görüldüğü üzere context'in 'attribute' parametresi üzerinden x attribute'
 Tag helper'daki attribute'lara sadece context'den erişmek gibi bir kısıtlama yoktur. Alternatif olarak property'ler üzerinden de bu attribute'lara erişebiliriz.
 </p>
 <img src="img/customtaghelper8.png">
-<br><br>
 <p>
 Aynı isimde olan property ve attribute'lar arkaplanda otomatik eşleştirilecektir. x değişkeninin tag helper class'ında bir property'si olmadığı için o attribute'a sadece context parametresinden ulaşabiliriz.
 </p>
 <br>
 
-<h5>
+<h3>
 Peki biz en baştaki a tag'ı gibi bir çıktıyı output parametresiyle nasıl oluşturabiliriz?
-</h5> 
+</h3> 
 <p>
 Öncelikle oluşturmak istediğimiz etiketi 'TagName' property'si ile bildiriyoruz. Bu etiketin attribute'ları olacaksa, onları 'Attributes' property'si ile belirtiyoruz. Ardından bu etiketin bir display'i olması lazım yani a etiketini görüntüleyebilmek için bir metninin olması gerekiyor. Bunun içinde 'Content' property'sini kullanıyoruz. 
 </p>
@@ -117,7 +114,6 @@ Ve uygulamayı çalıştırdığımızda aşağıdaki şekilde bir sonuç alaca�
 Oluşturulan tag helper'lar isimlerini, otomatik olarak kendi sınıflarından almaktadır. Ancak sınıfın ismi dışında başka bir isimle bu helper'ı kullanmak istiyorsak bu ismi [HtmlTargetElement] attribute'u üzerinden verebiliriz.
 </p>
 <img src="img/customtaghelper11.png">
-<br><br>
 <p>
 Görüldüğü üzere email tag helper'ı pasifleşirken custom tag helper aktif hale gelmiştir.
 </p>
