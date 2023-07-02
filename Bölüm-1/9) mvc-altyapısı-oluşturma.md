@@ -3,11 +3,7 @@
 <p>
 Asp .net uygulamasında, Mvc mimarisini kullanabilmek için uygulamaya mvc'yi servis olarak eklememiz gerekmektedir.
 </p>
-<br>
-
 <img src="img/controllers.png">
-<br><br>
-
 <p>
 Program.cs dosyasındaki Services property'si üzerinden servisimizi yani mvc mimarimizi uygulamaya ekliyoruz. 
 </p>
@@ -19,11 +15,11 @@ Eğer ki mvc'de istekleri alan controller'ı kullanacaksak AddControllers() meto
 </p>
 <p>
 Yok eğer view katmanını da kullanacaksak o zaman AddControllersWithViews() metodunu eklememiz gerekiyor.
-</p><br>
-
-<img src="img/routingandendpoints.png">
+</p>
 <br><br>
 
+
+<img src="img/routingandendpoints.png">
 <p>
 UseRouting() metodu: Gelen isteğin, hangi controller'ın metodunu çağıracağı bu metotla belirliyor. Yani gelen isteğin rotasını bu middleware belirliyor.
 </p>
@@ -33,11 +29,10 @@ UseEndpoints() metodu: Yapmış olduğumuz isteğin ta kendisidir. İstek yapıl
 </p>
 <p>
 Bu uygulamaya gelen isteklerin hangi rotalar / şablonlar eşliğinde gelebileceğini endpoints'den bildireceğiz.
-</p><br>
+</p><br><br>
+
 
 <img src="img/controller.png">
-<br><br>
-
 <p>
 Controller'lar özlerinde bir class'tırlar. Ve bir class'ın request karşılayabilir fıtrata sahip olabilmesi için Controller sınıfından kalıtım alması gerekir. 
 </p>
@@ -52,19 +47,18 @@ Bir controller'ın içerisinde (erişim belirleyicisi fark etmeksizin) herhangi 
 </p>
 <p>
 Eğer Controller sınıfından türetilmeseydi o zaman normal bir metot görevi görecekti, action metot olmayacaktı.
-</p><br>
+</p><br><br>
+
 
 <img src="img/getproducts.png">
-<br><br>
-
 <p>
-Bir metodun view'ını oluşturmak için Views klasörünü kullanmalıyız.
+Bir metodun view'ini oluşturmak için Views klasörünü kullanmalıyız.
 </p>
 <p>
 Bir controller'a ait view'lerin hepsi, ilgili controller isminin altında bulunması gerekiyor. Örneğin ProductController'a ait bütün view'ler, Product klasörünün altında olması gerekiyor.
 </p>
 <p>
-Mesela ProductController içerisindeki GetProducts() action'ının view'ı, action ismiyle aynı olmalıdır.
+Mesela ProductController içerisindeki GetProducts() action'ının view'i, action ismiyle aynı olmalıdır.
 </p>
 <p>
 View dosyaları .cshtml uzantılı dosyalardır. 
@@ -73,29 +67,26 @@ View dosyaları .cshtml uzantılı dosyalardır.
 c sharp + html = .cshtml ==>  Bu formata Razor teknolojisi denir.
 </p>
 <p>
-Razor teknolojisi, asp .net veya asp .net core mvc mimarisinde view'ı kodlayabilmek, view'da hızlı bir şekilde UI tabanlı çalışmalar gerçekleştirebilmek için geliştirilmiş bir teknolojidir. 
+Razor teknolojisi, asp .net veya asp .net core mvc mimarisinde view'i kodlayabilmek, view'da hızlı bir şekilde UI tabanlı çalışmalar gerçekleştirebilmek için geliştirilmiş bir teknolojidir. 
 </p>
 <p>
 Html içerisinde c# kodlarını yazmamızı sağlayan bir teknolojidir. 
-</p><br>
+</p><br><br>
+
 
 <img src="img/viewfonk.png">
-<br><br>
-
 <p>
 View fonksiyonu, bu action'a ait view (.cshtml) dosyasını tetikleyecek olan fonksiyondur.
-</p>
+</p><br><br>
+
 
 <img src="img/anotherview.png">
-<br><br>
-
 <p>
-Eğer ilgili action ismiyle birebir aynı olan view'ı tetiklemek istemiyorsak View() overload'ı olan metodu kullanarak belirtilen view ismindeki dosyayı render edebiliriz. 
-</p><br>
+Eğer ilgili action ismiyle birebir aynı olan view'i tetiklemek istemiyorsak View() overload'u olan metodu kullanarak belirtilen view ismindeki dosyayı render edebiliriz. 
+</p><br><br>
+
 
 <img src="img/models.png">
-<br><br>
-
 <p>
 Models klasörünün içinde Context'imiz olur (entity framework'deki), entity'lerimiz olur yani veri tabanı ile ilgili işlemler burada yapılır.
 </p>
